@@ -1,14 +1,10 @@
-import config from '../config/domain'
+import config from "../config/domain";
 
 // ### Resolver ### //
-function v1 ( handshakename )
-{
-	const url = `https://${handshakename}.${config.domain}/`
+function v1(handshakename) {
+	const url = `http://${handshakename}.${config.domain}/`;
 
-	location.href = url
-
+	location.href = url;
 }
 
-export { 
-	v1 
-}
+export { v1 };
